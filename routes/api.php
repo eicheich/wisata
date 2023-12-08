@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get("/wisata", "App\Http\Controllers\wisataController@index");
+//cok
