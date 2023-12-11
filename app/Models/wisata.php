@@ -21,5 +21,11 @@ class wisata extends Model
         'updated_at' => 'datetime',
     ];
 
+//    image path
+    public function getThumbnailAttribute($value)
+    {
+        return asset('storage/' . $value);
+    }
+
 
 }

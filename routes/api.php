@@ -19,4 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get("/wisata", [\App\Http\Controllers\WisataController::class, 'index']);
+Route::post("/upload-wisata",[\App\Http\Controllers\WisataController::class, 'create']);
+
 //cok
